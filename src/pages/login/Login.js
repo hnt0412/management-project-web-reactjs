@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import './Login.css';
 import { useHistory } from 'react-router-dom';
