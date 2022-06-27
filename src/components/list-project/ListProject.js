@@ -5,6 +5,7 @@ import Avatar from './../avatar/Avatar'
 import './ListProject.css'
 
 const ListProject = ({ projects }) => {
+  console.log(projects)
   return (
     <div className="project-list">
       {projects.length === 0 && <p>Chưa có dự án!</p>}

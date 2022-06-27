@@ -6,7 +6,9 @@ export const useDocument = (collection,id) => {
     const [error, setError] = useState()
 
     useEffect(() => {
+        console.log('1')
         const ref = projectFirestore.collection(collection).doc(id)
+        console.log(ref)
         ref.onSnapshot(snapshot => {
            if(snapshot.data()){
             setDocument({...snapshot.data(),id:snapshot.id})
